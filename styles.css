@@ -1,62 +1,141 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* ---------------------------------- */
+/* Global Styles & Reset              */
+/* ---------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+}
+
+html, body, header{
+  width: 100%;
 }
 
 body {
     font-family: Tahoma, Georgia, 'Times New Roman', 'Trebuchet MS', Arial, Verdana;
-    font-size: 16px;
-    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
 }
 
-header {
-    margin-bottom: 4px;
-    padding-bottom: 4px;
-}
+/* ---------------------------------- */
+/* Layout Utilities                   */
+/* ---------------------------------- */
 
-main {
-    margin: 4px;
-    padding: 4px;
-}
+/* ---------------------------------- */
+/* Text and Typography                */
+/* ---------------------------------- */
 
-footer {
-    margin-top: 4px;
-    padding-top: 4px;
-    padding-left: 4px;
-    padding-right: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.banner {
-    width: 50%;
-    align-self: center;
-}
-
-td {
-    padding: 2px;
-    margin: 4px;
-}
-
-hr {
-    margin: 4px;
-}
-
-img {
-    max-width: 100%;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-style: normal;
+    margin: 0.25rem;
 }
 
 h1 {
     font-size: 50px;
-    padding: 2px;
-    padding-bottom: 0px;
 }
 
-.tagline {
-    font-size: 15px;
-    padding: 2px;
+h2 {
+    font-size: 45px;
 }
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 35px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 25px;
+}
+
+p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+a {
+    font-size: 1rem;
+    font-style: italic;
+    color: #000;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------------- */
+/* Navbar                             */
+/* ---------------------------------- */
+
+.navbar {
+  width: 100%;
+  background-color: #ff914d; /* Adjust as needed */
+}
+
+/* Use flex to lay out the buttons evenly */
+.navbuttons {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each <a> should grow equally */
+.navbuttons a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Make buttons fill their containers */
+.navbuttons button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #ff914d;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Optional hover style */
+.navbuttons button:hover {
+  background-color: #e57f42;
+}
+
+/* ---------------------------------- */
+/* Hero                               */
+/* ---------------------------------- */
+
+.hero {
+    font-style: italic;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.hero h1 {
+    font-size: 75px;
+}
+
+/* ---------------------------------- */
+/* Main                               */
+/* ---------------------------------- */
+
+main {
+    margin: 4px;
+}
+
+/* ---------------------------------- */
+/* Footer                             */
+/* ---------------------------------- */
