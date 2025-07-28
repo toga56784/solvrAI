@@ -107,6 +107,7 @@ a:hover {
   color: white;
   font-size: 1rem;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 /* Optional hover style */
@@ -139,3 +140,23 @@ main {
 /* ---------------------------------- */
 /* Footer                             */
 /* ---------------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-table a{
+    font-size: 25px;
+}
+
+.c{
+    font-size: 25px;
+}
+
+footer img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
